@@ -1,0 +1,23 @@
+import React from "react";
+import { render } from "@testing-library/react";
+
+import {{pascalCase name}} from ".";
+
+import { {{pascalCase name}}Props } from "./types";
+
+describe("Test Component", () => {
+let props: {{pascalCase name}}Props;
+beforeEach(() => {
+props = {
+foo: "bar"
+};
+});
+const renderComponent = () => render(
+<{{pascalCase name}} {...props} />);
+it("Should render foo text correctly", () => {
+props.foo = "harvey was here";
+const { getByTestId } = renderComponent();
+const component = getByTestId("{{pascalCase name}}");
+expect(component).toHaveTextContent("harvey was here");
+});
+});
