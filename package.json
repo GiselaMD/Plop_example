@@ -19,7 +19,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "generate": "yarn plop --plopfile ./generators/plopfile.js"
   },
   "eslintConfig": {
